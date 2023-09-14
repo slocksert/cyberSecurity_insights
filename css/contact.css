@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
@@ -25,7 +27,6 @@ nav {
     line-height: 80px;
     margin: 0;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-items li {
@@ -36,9 +37,9 @@ nav {
 
 .navbar-items a {
     color: #157792;
-    text-decoration: none;
     transition: 0.5s;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .navbar-items a:hover{
@@ -51,7 +52,6 @@ nav {
     width: auto;
     height: auto;
 }
-
 
 /* contact */
 .contact-container {
@@ -100,6 +100,110 @@ nav {
     opacity: 1;
 }
 
-@media (max-width:2500px) {
+.black-container {
+    background-color: #f2f2f2;
+    height: 80px;
+    border-radius: 5px;
+}
+
+@media (min-width: 2100px){
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-container h2 {
+        font-size: 3rem;
+    }
+
+    .contact-container p {
+        font-size: 2rem;
+    }
+
+    .contact-container input,
+    .contact-container textarea{
+        width: 50%;
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+
+    .contact-container textarea{
+        margin: 0 auto;
+    }
+
+    .contact-container input[type="submit"] {
+        margin-top: 2rem;
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 1500px){
     
+}
+
+
+@media (max-width: 1100px) {
+    
+
+} 
+
+@media (max-width: 900px){
+    .contact-container {
+        width: 80%;
+        margin-left: 4.5rem;
+    }
+
+    .contact-container input,
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-container input[type="submit"]{
+        margin-top: 1rem;
+        width: 35%;
+    }
+    
+}
+
+@media (max-width: 576px){
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-container {
+        height: auto;
+    }
+
+    .navbar-items{
+        font-size: 0.9rem;
+        right: -25px;
+        line-height: 60px;
+    }
+
+    .logo{
+        max-width: 8rem;
+    }
+
+    .contact-container {
+        padding: 3rem 2rem;
+        width: 100%;
+        margin:  0 auto;
+    }
+
+    .contact-container input,
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-container input[type="submit"]{
+        margin-top: 1rem;
+        width: 35%;
+    }
+    .black-container{
+        height: 80px;
+    }
 }

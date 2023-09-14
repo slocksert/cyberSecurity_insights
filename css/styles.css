@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
@@ -50,7 +50,6 @@ nav {
     line-height: 80px;
     margin: 0;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-items li {
@@ -186,7 +185,7 @@ nav {
 }
 
 .game:hover{
-    transform: scale(1.01);
+    background-color: #f3eded;
 }
 
 .games-container .image1, .games-container .image2{
@@ -209,13 +208,12 @@ nav {
 
 .game h2{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
 .game p {
     padding: 20px;
-    
+    font-weight: 300;
 }
 
 #last-p {
@@ -268,305 +266,218 @@ nav {
     color: white;
     display: block;
     margin: 2rem 2rem 2rem 23rem;
+    cursor: pointer;
 }
 
-/* 2500 */
-@media (min-width: 2500px){
-    html {
-        overflow: auto;
+/* button */
+
+#btn-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #7c867a;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.arrow {
+    border: solid #000;
+    border-width: 0 7px 7px 0;
+    padding: 6px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.up {
+    transform: rotate(-135deg);
+}
+
+#btn-top:hover{
+    opacity: .9;
+}
+
+@media (min-width: 2100px){
+
+    main, .footer-container {
+        width: 60%;
+        margin: 0 auto;
     }
 
     .contact-container h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-
-    .contact-container input[type='email'] {
-        width: 120rem;
-        font-size: 1.5rem;
-    }
-
-    .contact-container input[type="submit"]{
-        margin-left: 65rem;
-        font-size: 1.3rem;
-    }   
     
-    .navbar-container{
-        height: 150px;
-    }
-
-    .logo {
-        max-width: 450px;
-    }
-
-    .navbar-items {
-        right: 100px;
-        font-size: 32px;
-        line-height: 150px;
-    }
-
-    .slider{
-        margin: 100px auto;
-        width: 1500px;
-        height: 900px;
-    }
-
-    .games-container{
-        padding: 0 10px 0 0px;
-    }
-
-    .game{
-        max-width: max-content;
-        padding: 100px 180px;
-    }
-
-    .game p {
-        font-size: 36px;
-    }
-
-    .game h2{
-        font-size: 60px;
-        margin-bottom: 20px;
-    }
-
-    .games-container .image1{
-        display: none;
-    }
-
-    .games-container .image2{
-        display: none;
-    }
-
-    .navigation-auto{
-        width: 1300px;
-    }
-
-    .manual-navigation{
-        width: 1300px;
-    }
-}
-
-@media (max-width: 2000px){
-    
-    .game {
-        padding: 50px 100px 0 100px;
-    }
-
-    .game p {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .game h2{
-        font-size: 36px;
-    }
-
-    .navbar-items li {
-        font-size: 20px;
-    }
-
-    .contact-container {
-       background-color: #fd3463;
-    }
-
-    .contact-container h2{
-        font-size: 2rem !important;
-        font-weight: bolder;
-    } 
-
-    .contact-container input[type='email'] {
-        margin: 2rem auto 2rem auto;
-    }
-
-    .contact-container input[type="submit"]{
-        margin: auto;
-    }   
-
-    #last-p {
-        padding: 20px 20px 10rem 20px;
-    }
-
-}
-
-/* 1400px */
-
-@media (max-width: 1500px){
-    .navbar-items {
-        right: 1px;
-    }
-
-    .games-container{
-        width: 100%;
-    }
-
-    .game{
-        padding: 50px;
-    }
-
-    .game h2 {
-        font-size: 36px;
-    }
-
-    .game p{
-        text-align: left;
-        font-size: 20px;
-    }
-
-    .contact-container h2 {
+    .contact-container input[type='email'],
+    .contact-container input[type='submit'] {
+        margin: 2rem auto;
         font-size: 1.8rem;
     }
 
-    .contact-container input[type='email'] {
-        width: 50rem;
-        font-size: 1.3rem;
+    .contact-container input[type='submit']{
+        width: 15rem;
+        height: auto;
+        padding: 0rem 1rem 0 1rem;
     }
 
-    .contact-container input[type="submit"]{
-        margin: auto;
-        font-size: 1.1rem;
-    }   
-
-}
-
-/* laptop a partir de 1100px */
-
-@media (max-width: 1100px){
-
-    .navbar-container{
-        width: 130%;
+    .contact-container {
+        margin-top: -2rem;
     }
 
-    .slider{
-        margin: 100px 0 50px 250px;
-    }
-
-    .navbar-items {
-        right: 20px;
-    }
-
-    .game{
-        max-width: max-content;
-        width: 130%;
+    .game h2 {
+        font-size: 2.5rem;
     }
 
     .game p {
-        font-size: 30px;
-    }
-
-    .navbar-items {
-        font-size: 20px;
-    }
-
-    .footer-container {
-        width: 130%;
-    }
-
-    .contact-container h2 {
         font-size: 2rem;
     }
-    
-    .contact-container input[type='email'] {
-        margin: 2rem 4rem 2rem 4rem;
-        font-size: 1.5rem;
-    }
-
-    .contact-container input[type="submit"]{
-        margin: auto;
-        font-size: 1.3rem;
-    }   
-
 }
 
-/* tablets 900px */
-
-@media (max-width: 900px) {
-    .navbar-container {
-        width: 135%;
+@media (max-width: 2000px) {
+    .contact-container input[type='email'],
+    .contact-container input[type='submit'] {
+        margin: 2rem auto;
     }
+}
 
-    .navbar-items{
-        right: 20px;
-        font-size: 30px;
+@media (max-width: 1500px){
+    .contact-container input[type='email'],
+    .contact-container input[type='submit'] {
+        margin: 2rem auto;
     }
+}
 
-    .slider{
-        margin: 50px 0 25px 125px;
+
+@media (max-width: 1100px) {
+    .contact-container {
+        background-color: #fd3463;
+        margin: -3rem 3rem auto 3rem;
+        padding: 1rem;
     }
-
-    .game {
-        width: 135%;
-    }
-
-    .game p {
-        text-align: left;
-        font-size: 30px;
-    }
-
-    .footer-container {
-        width: 135%;
+    
+    .contact-container h2 {
+        margin-top: -4rem;
+        font-size: 2rem;
     }
 
     .contact-container input[type='email'] {
-        width: auto;
-        margin: 2rem 2rem 2rem 8rem;
+        width: 80%;
+        margin: 4rem auto;
+        font-size: 1.4rem;
     }
 
+    .contact-container input[type='submit'] {
+        margin: -2rem auto auto auto;
+        font-size: 1.5rem;
+        width: auto;
+        padding: 1rem 2rem 2.4rem 2rem;
+    }
+
+} 
+
+@media (max-width: 900px){
+   html, body{
+    overflow-x: hidden;
+   }
+
+   .contact-container {
+    background-color: #fd3463;
+    margin: -3rem 1rem auto 1rem;
+    padding: 1rem;
+}
+
+    .contact-container h2 {
+        margin-top: -4rem;
+        font-size: 2rem;
+    }
+
+    .contact-container input[type='email'] {
+        width: 80%;
+        margin: 4rem auto;
+        font-size: 1.4rem;
+    }
+
+    .contact-container input[type='submit'] {
+        margin: -2rem auto auto auto;
+    }
+    
 }
 
 /* celular 576px */
 
 @media (max-width: 576px) {
-
-    .game {
-        width: 220%;
-    }   
-
-    .game h2{
-        font-size: 50px;
+    html,
+    body {
+        overflow-x: hidden;
     }
 
-    .game p{
-        text-align: left;
-        font-size: 41px;
+    .navbar-container {
+        height: auto;
+    }
+
+    .navbar-items{
+        font-size: 0.9rem;
+        right: -25px;
+        line-height: 60px;
+    }
+
+    .logo{
+        max-width: 8rem;
     }
 
     .slider{
-        margin: 0 100px 25px 25px;
+        margin: 2rem 1rem 2px 19px;
+        width: 90%;
     }
 
-    .navbar-container{
-        width: 220%;
-        height: 110px;
+    .slider .navigation-auto{
+        display: none;
     }
 
-    .navbar-items li {
-        line-height: 110px;
-        font-size: 30px;
+    .manual-btn{
+        display: none;
     }
 
-    .logo {
-        max-width: 285px;
-    }
-
-    .footer-container {
-        width: 220%;
+    .game:not(:last-child){
+        margin-top: -12rem;
     }
 
     .contact-container {
-        margin: auto 2rem auto 2rem;
         background-color: #fd3463;
+        margin: -3rem 1rem auto 1rem;
+        padding: 1rem;
     }
 
     .contact-container h2 {
-        margin-top: -3rem;
-        font-size: 2.5rem;
+        margin-top: -4rem;
+        font-size: 1.5rem;
     }
 
     .contact-container input[type='email'] {
-        margin: 2rem auto 2rem auto;
+        width: 80%;
+        margin: 4rem auto 1rem auto;
+        font-size: 1rem;
+    }
+
+    .contact-container input[type='submit'] {
+        margin: auto;
+        width: auto;
+        height: auto;
+        padding: 0.5rem;
     }
 
     #last-p {
         padding: 20px 20px 60px 20px;
+    }
+
+    #btn-top {
+        right: 0.5rem;
     }
 
 }
