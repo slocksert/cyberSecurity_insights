@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #F2F2F2;
 }
 
 h1, h2, h3 {
@@ -415,6 +416,7 @@ nav {
     html,
     body {
         overflow-x: hidden;
+        background-color: #F2F2F2;
     }
 
     .navbar-container {
@@ -432,7 +434,6 @@ nav {
     }
 
     .slider{
-        margin: 2rem 1rem 2px 19px;
         width: 90%;
     }
 

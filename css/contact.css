@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #F2F2F2;
+}
+
 /* navbar */
 
 .navbar-container {
@@ -171,6 +175,7 @@ nav {
     html,
     body {
         overflow-x: hidden;
+        background-color: #F2F2F2;
     }
 
     .navbar-container {

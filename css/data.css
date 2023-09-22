@@ -1,0 +1,100 @@
+.container {
+    width: 100vw;
+    max-width: 40rem;
+    height: 100vh;
+    max-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    background-image: url("https://pghnetworks.com/wp-content/uploads/2018/06/Blog-pic.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container>* {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.4rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}  
+
+.hidden {
+    display: none;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+#highscores ul {
+    margin-bottom: 1.5rem;
+}
+
+.high-score {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
+
+ #go_home,#quiz {
+    font-size: 20px;
+    font-weight: 500;
+    color: #445843;
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #445843;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+#go_home:hover , #quiz:hover{
+    color: #fff;
+    background: #007bff;
+    transform: scale(1.025);
+}
+li {
+    color: white;
+}
+
+li:last-child{
+    margin-bottom: 12rem;
+}
+
+@media (max-width: 768px) {
+    h1{
+        text-align: center;
+    }
+}
